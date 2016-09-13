@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b09abf6-329f-4a5f-b7fc-51adf747ef5d" name="Default" comment="" />
+    <list default="true" id="3b09abf6-329f-4a5f-b7fc-51adf747ef5d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
     <ignored path="draft-hanjiangyu.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/souyidai/hanjiangyu/draft/utils/jsonDraft.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.77134985">
-              <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1165#1173#0" expanded="true" />
@@ -46,6 +48,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -111,7 +116,7 @@
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -931,15 +936,15 @@
       <option name="number" value="Default" />
       <updated>1473747460446</updated>
       <workItem from="1473747461794" duration="247000" />
-      <workItem from="1473747718021" duration="9368000" />
+      <workItem from="1473747718021" duration="9439000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9615000" />
+    <option name="totallyTimeSpent" value="9686000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1064,7 +1069,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/souyidai/hanjiangyu/draft/utils/jsonDraft.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.77134985">
-          <caret line="35" column="51" selection-start-line="35" selection-start-column="51" selection-end-line="35" selection-end-column="51" />
+          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1165#1173#0" expanded="true" />

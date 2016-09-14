@@ -8,7 +8,7 @@ import java.util.*;
 public class battle {
     public static void main(String[] arg){
         Person person1 = new Person();
-        person1.setName("hjy");
+        person1.setName("hhjy");
         person1.setSex("man");
         person1.setAge(22);
         Person person2 = new Person();

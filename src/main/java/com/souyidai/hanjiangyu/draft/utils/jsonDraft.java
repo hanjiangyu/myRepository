@@ -13,6 +13,7 @@ import java.util.List;
  * 对象.toJSONString
  */
 public class jsonDraft {
+
     public static void main(String[] arg){
         Person person = new Person();
         person.setName("tom");

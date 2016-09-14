@@ -17,7 +17,7 @@ public class battle {
         person2.setAge(23);
 
 
-        int r1,r2;
+        int r1,r2,r3;
         for(int i =0;i<10;i++){
             r1 = person1.chaiQuan();
             r2 = person2.chaiQuan();

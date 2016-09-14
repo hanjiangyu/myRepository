@@ -17,14 +17,14 @@ public class battle {
         person2.setAge(23);
 
 
-        int r1,r2,r3;
+        int r1,r2,r3,r4;
         for(int i =0;i<10;i++){
             r1 = person1.chaiQuan();
             r2 = person2.chaiQuan();
             if((r1==0&&r2==1)||(r1==1&&r2==2)||(r1==2&&r2==0)){
                 System.out.println("hjy win！");
             }else if(r1==r2){
-                System.out.println("平局！");
+                System.out.println("平局a！");
             }else{
                 System.out.println("zbw win！");
             }

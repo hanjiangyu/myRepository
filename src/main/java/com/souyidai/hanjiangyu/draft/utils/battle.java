@@ -16,6 +16,7 @@ public class battle {
         person2.setSex("man");
         person2.setAge(23);
 
+
         int r1,r2;
         for(int i =0;i<10;i++){
             r1 = person1.chaiQuan();

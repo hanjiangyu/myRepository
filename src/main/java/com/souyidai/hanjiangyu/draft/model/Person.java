@@ -20,6 +20,10 @@ public class Person {
         return result;
     }
 
+    public void singSong(){
+        System.out.println("tansini~~tansini~~tansini~~");
+    }
+
     public String getName() {
         return name;
     }

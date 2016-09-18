@@ -1,0 +1,16 @@
+api组件中：只有JxlDataService的Test里会引用到com.souyidai.proxy.juxinli.api.iface;中的唯一一个接口JxlDataService（@STFService接口）
+
+service组件中：JxlDataServiceImpl提供给风控后台的接口，MessageListenerImpl实现jxl后台和fkapi的同步
+
+service组件中：AbstractThriftService抽象类被JxlDataServiceImpl实现，提供getInv()
+
+
+
+
+
+
+
+
+
+
+

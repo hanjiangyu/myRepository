@@ -1,0 +1,32 @@
+“$elemMatch”用于对内嵌文档进行多条件查询。
+例： query.addCriteria(Criteria.where("result.transactions").elemMatch(
+                      Criteria.where("datasource").is(datasource)));
+     实际是对库中result.transactions.datasource进行查询
+
+boolean必须写成Boolean大写对象，小写可能接受不到
+
+//判断是否在指定类型中的List写法
+private static final List<String> CONTACTTYPES = Arrays.asList("0","1","2","3","4","5","6");
+if(StringUtils.isNotBlank(contact.getContactType()) && !CONTACTTYPES.contains(contact.getContactType())){
+    return error("65552", "联系人类型不合法");
+}
+
+<T>泛型
+
+跨module的修改测试，要先install
+
+如果在程序中需要配置其他的过滤器，那么一定要在roseFilter之前。
+
+pom引入dependency时找不到，右侧maven刷新即可，贼神奇
+
+could not Autowired,自动注入的bean编译时找不到，不用管
+
+Cannot create JDBC driver of class '' for connect URL 'null'调试了一个小时，发现数据库源配置少修改一个地方。
+
+这次出错是因为表名不应该用中文名和-字符
+
+时间戳是1970年8点以来的秒数，long是毫秒数，一秒是一千毫秒
+
+调用有返回值的方法一定要处理返回值
+
+(gitlab局域用，github互联网用)

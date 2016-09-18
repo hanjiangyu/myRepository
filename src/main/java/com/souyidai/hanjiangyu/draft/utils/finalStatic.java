@@ -13,7 +13,14 @@ public class finalStatic {
     public static void main(String[] arg){
         //l1.clear();
         System.out.println(l1);
+        String str = "ascd   1  ";
+        System.out.println(str.length());
+
+        int a = 0;
+        Integer a2 = 0;
+        System.out.println();
     }
+
 
 
 }

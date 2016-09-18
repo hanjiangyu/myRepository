@@ -1,0 +1,33 @@
+/*基础*/
+cd / 切换到根目录
+
+grep Linux系统中grep命令是一种强大的文本搜索工具
+选取命令grep通常和其他命令一起联合管道使用，分析一行消息，若其中有所需要的消息，则将该行取出。
+例如：取出mm7.smil文件中存在name 字符的一行。
+
+在Linux系统中有三种命令可以用来查阅全部的文件，分别是cat、more和less命令。它们查阅文件的使用方法也比较简单都是 命令 文件名 ，但是三者又有着区别。
+1.cat命令可以一次显示整个文件，如果文件比较大，使用不是很方便；
+2.more命令可以让屏幕在显示满一屏幕时暂停，此时可按空格健继续显示下一个画面，或按Q键停止显示。
+3.less命令也可以分页显示文件，和more命令的区别就在于它支持上下键卷动屏幕，当结束浏览时，只要在less命令的提示符“: ”下按Q键即可。
+另外，多数情况下more和less命令会配合管道符来分页输出需要在屏幕上显示的内容。
+
+vi 文件名：进入编辑 h,j,k,l光标移动
+i或a或o：进入插入模式 esc：退出插入模式
+:wq 退出
+
+/*聚信力项目相关*/
+重启resin服务器上的app   resinctl48 restart --server app-juxinli
+重启resin服务器   service resin restart
+重启mysql服务器   service mysqld restart
+查看log日志   tail -100f juxinli.proxy.stdout.log
+开启一些服务  1.service resin  2.mongo  3.mysql
+
+
+/*重要配置文件*/
+opt-souyidai-config  root.xml proxy-jvxinli.xml
+etc-resin48-vhost
+etc-nginx-conf.d
+var-log-resin48
+
+more root |grep juxinli
+

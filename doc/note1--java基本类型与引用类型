@@ -1,0 +1,24 @@
+String.length() 正确返回字符串长度，无论数字英文还是汉字
+
+JSONObject继承map，JsonArray继承list
+
+
+/*基本数据类型与它们的包装类*/
+java有8种基本数据类型，而针对每个基本数据类型，又有一个包装类与之对应。
+
+基本类型本身只能描述数据类型，是不会让数据具有“对象”的属性与方法的。而包装类型是具备对象的特征。比如
+int a1 = 0;
+Integer a2= null;
+上述a1只是描述类型，a1不是对象，存在栈区;a2则是一个对方，可以a2.方法()
+
+boolean是基本数据类型,Boolean是它的封装类，和其他类一样，有属性有方法，可以new，例如：
+Boolean flag = new Boolean("true");  // boolean 则不可以！
+Boolean 是boolean 的实例化对象类，和Integer对应int一样
+自jdk1.5.0以上版本后，Boolean在"赋值"和判断上和boolean一样，
+即是你： boolean b1 = true ; 或者 Boolean b2 = true ; 都可以。
+唯一只能使用Boolean上的就是从列表或者哈希表获取值时。
+比如 boolean t = false;
+Map map = new HashMap();
+map.put("t", t);
+那么获取值时只能用
+Boolean t1 = (Boolean) map.get(t); //前面只能用Boolean强制转换，不能使用boolean.

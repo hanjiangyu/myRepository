@@ -1,0 +1,17 @@
+内网dev测试环境都在10.15上；上线及rc都在外网服务器上
+
+proxy.souyidai.com:  10.15：1262
+
+一般情况，修改代码后要重新上传war包；但利用公司的hudson平台，可以直接部署到服务器上。
+
+/*
+name:nginx
+description: http://www.open-open.com/lib/view/open1419826381531.html
+    nginx可以做静态文件的分发（将用户的url映射到本地的文件），重要的是实现反向代理和负载均衡！
+*/
+
+
+/*
+name:resin
+description: 服务器上的resin.xml引入了同级vhost文件夹中的配置文件
+*/

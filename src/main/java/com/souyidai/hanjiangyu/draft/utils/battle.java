@@ -1,7 +1,6 @@
 package com.souyidai.hanjiangyu.draft.utils;
 
 import com.souyidai.hanjiangyu.draft.model.*;
-import java.util.*;
 /**
  * Created by SOUYIDAI on 2016/9/13.
  */
@@ -16,8 +15,10 @@ public class battle {
         person2.setSex("man");
         person2.setAge(23);
 
+        //唱歌
         person1.singSong();
 
+        //进行10局游戏
         int r1,r2;
         int a1=0,a2=0;
         int num=10;

@@ -6,6 +6,8 @@ package com.souyidai.hanjiangyu.draft.utils;
 public class riverCrossingProblem {
 
     public static void main(String[] arg){
+        System.out.println('a'^'a');
+        System.out.println(1^0);
 
     }
 

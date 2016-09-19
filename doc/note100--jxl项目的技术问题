@@ -1,3 +1,5 @@
+
+
 “$elemMatch”用于对内嵌文档进行多条件查询。
 例： query.addCriteria(Criteria.where("result.transactions").elemMatch(
                       Criteria.where("datasource").is(datasource)));

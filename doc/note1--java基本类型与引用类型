@@ -2,6 +2,7 @@ String.length() 正确返回字符串长度，无论数字英文还是汉字
 
 JSONObject继承map，JsonArray继承list
 
+String类型初始化是双引号“”，char类型初始化是单引号‘’
 
 /*基本数据类型与它们的包装类*/
 java有8种基本数据类型，而针对每个基本数据类型，又有一个包装类与之对应。

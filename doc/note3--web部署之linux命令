@@ -23,6 +23,12 @@ i或a或o：进入插入模式 esc：退出插入模式
 查看log日志   tail -100f juxinli.proxy.stdout.log
 开启一些服务  1.service resin  2.mongo  3.mysql
 
+resinctl48 restart --server app-bigdata(vhost里面找服务名)，重启服务；不过项目被配置到了hudson里，修改项目后就不需要手动重启，
+hudson里配置这行命令就可以了。
+
+域名的前半部分配置在host里，后半部分的配置经过nginx与resin反射到对应的端口。
+
+
 
 /*重要配置文件*/
 opt-souyidai-config  root.xml proxy-jvxinli.xml   公共配置

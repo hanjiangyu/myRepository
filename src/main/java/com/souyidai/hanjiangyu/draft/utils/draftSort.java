@@ -3,7 +3,7 @@ package com.souyidai.hanjiangyu.draft.utils;
 /**
  * Created by SOUYIDAI on 2016/9/13.
  */
-public class sortDraft {
+public class draftSort {
     public static void main(String[] arg){
         int [] array = {0,2,3,4,5,3,2,1,3};
         bubbleSort(array);

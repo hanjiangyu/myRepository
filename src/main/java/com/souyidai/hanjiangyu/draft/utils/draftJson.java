@@ -12,7 +12,7 @@ import java.util.List;
  * Json.parseArray()
  * 对象.toJSONString
  */
-public class jsonDraft {
+public class draftJson {
 
     public static void main(String[] arg){
         Person person = new Person();

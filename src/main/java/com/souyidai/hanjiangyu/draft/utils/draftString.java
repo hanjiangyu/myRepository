@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * Created by SOUYIDAI on 2016/9/19.
  */
-public class stringDraft {
+public class draftString {
     public static void main(String[] arg){
         String str = "海贼王";
         System.out.println(str);

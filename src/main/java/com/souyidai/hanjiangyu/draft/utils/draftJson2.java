@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * Created by hanjiangyu on 2016/9/22.
+ * jsonstring标准格式的问题
  */
 public class draftJson2 {
     public static void main(String[] arg){

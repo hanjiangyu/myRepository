@@ -8,8 +8,19 @@ import java.util.Date;
 public class Class1 {
     protected int a;
 
+    public class ClassIner{
+        private int b;
+        public void func(){
+            b = a;
+        }
+    }
+
     public static void main(String[] args){
         Date date = new Date();
         System.out.print(date);
+
+
     }
+
+
 }

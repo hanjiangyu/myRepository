@@ -6,4 +6,6 @@ package com.souyidai.hanjiangyu.draft.aJavaBook;
 public class Class2 implements Cloneable{
     Class1 class1 = new Class1();
     int a = class1.a;
+
+
 }

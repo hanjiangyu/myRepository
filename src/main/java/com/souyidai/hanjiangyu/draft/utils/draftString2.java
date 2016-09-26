@@ -16,5 +16,9 @@ public class draftString2 {
         System.out.println(str2);
         System.out.println(str2.substring(str2.length()-2,str2.length()));
 
+        String str3 = "qwer";
+        str3 = str3.replace("q","w").replace("e","r");
+        System.out.println(str3);
+
     }
 }

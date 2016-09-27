@@ -3,3 +3,13 @@
 pageNo是从0起算的
 
 idea的文件重命名是有陷阱的，.class文件不会重命名，需要整体copy出来，改名，删除原件，再copy回去。
+
+getDownloadFile方法：
+ String path = request.getSession().getServletContext().getRealPath("download");获得的地址是：
+    E:\idea_workspace\soeasyData\soeasy-bigdata\souyidai-bigdata-web\src\main\webapp\download
+传进参数filename是：qianhai_record.xlsx
+
+每个产品都是一个线程池，来自不同客户的下载请求才是线程。
+
+http://www.runoob.com/http/http-header-fields.html
+Content-Length 很好的解释了下载到本地的方法。

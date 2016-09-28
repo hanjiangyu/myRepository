@@ -20,7 +20,5 @@ public class draftString2 {
         str3 = str3.replace("q","w").replace("e","r");
         System.out.println(str3);
 
-
-
     }
 }

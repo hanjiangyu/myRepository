@@ -13,3 +13,6 @@ getDownloadFile方法：
 
 http://www.runoob.com/http/http-header-fields.html
 Content-Length 很好的解释了下载到本地的方法。
+
+注解在出现的地方获得储存了一些元数据，然后在合适的位置我们使用了这些元数据，比如bigdata中auth对权限的管理
+我觉得非自定义注解的处理可能不在代码中，而在框架里。

@@ -8,6 +8,7 @@ public class Person {
     private String name;
     private String sex;
     private int age;
+    private Person couple;
 
     public int chaiQuan(){
         Random random = new Random();
@@ -46,6 +47,14 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Person getCouple() {
+        return couple;
+    }
+
+    public void setCouple(Person couple) {
+        this.couple = couple;
     }
 
     @Override

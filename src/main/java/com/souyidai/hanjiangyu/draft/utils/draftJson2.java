@@ -29,6 +29,9 @@ public class draftJson2 {
         String str4 = str3.replace("}\"","}");
         System.out.println(str4);
 
+        String st1 = "\\\"success\\\":true,\\\"reason_code\\\":\\\"200\\\",\\\"reason_desc\\\":\\\"获取成功\\\",\\\"rules\\\":[{\\\"conditions\\\":[{\\\"result\\\":15,\\\"dim_type\\\":\\\"id_number\\\",\\\"type\\\":\\\"frequency_one_dim\\\"},{\\\"result\\\":15,\\\"dim_type\\\":\\\"account_mobile\\\",\\\"type\\\":\\\"frequency_one_dim\\\"}],\\\"rule_id\\\":\\\"315676\\\",\\\"score\\\":5}]";
+        String st2 = st1.replace("\\","").replace("\"{","{").replace("}\"","}");
+        System.out.println(st2);
 
         //string类型中删除转义字符
 //        String ss = "\\\\\\\\\\";

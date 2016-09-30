@@ -38,6 +38,10 @@ public class draftJson {
         System.out.println("jsonString转jsonObject:"+jsonObject);
         System.out.println(jsonObject.get("name"));
 
+        String s1 = "{\"final_decision\":\"Review\",\"final_score\":30,\"hit_rules\":[{\"decision\":\"Accept\",\"id\":\"315586\",\"name\":\"手机号格式校验错误\",\"parentUuid\":\"\",\"score\":30,\"uuid\":\"be84ed93b8174412966e448fa49425a4\"}],\"policy_name\":\"借款事件_网站\",\"policy_set\":[{\"hit_rules\":[{\"decision\":\"Accept\",\"id\":\"315586\",\"name\":\"手机号格式校验错误\",\"parentUuid\":\"\",\"score\":30,\"uuid\":\"be84ed93b8174412966e448fa49425a4\"}],\"policy_decision\":\"Review\",\"policy_mode\":\"Weighted\",\"policy_name\":\"异常借款_网站\",\"policy_score\":30,\"policy_uuid\":\"b81d9532669941178cbcb6c9acc177ea\",\"risk_type\":\"suspiciousLoan\"}],\"policy_set_name\":\"借款事件_网站\",\"risk_type\":\"suspiciousLoan_review\",\"seq_id\":\"1461047313115611F31352EE88201031\",\"spend_time\":133,\"success\":true}";
+        jsonObject = JSON.parseObject(s1);
+        System.out.println(jsonObject.get("final_score"));
+
         //jsonarray要[]，jsonobject要{}
 //        JSONArray jsonArray = JSONArray.parseArray(jsonString);
 //        System.out.println(jsonArray);

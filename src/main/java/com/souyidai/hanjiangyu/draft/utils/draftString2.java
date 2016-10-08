@@ -1,5 +1,8 @@
 package com.souyidai.hanjiangyu.draft.utils;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by hanjiangyu on 2016/9/23.
  */
@@ -19,6 +22,15 @@ public class draftString2 {
         String str3 = "qwer";
         str3 = str3.replace("q","w").replace("e","r");
         System.out.println(str3);
+
+        for(int i =0 ;i<10;i++){
+            String str11 = String.valueOf(i);
+            System.out.println(str11);
+        }
+
+        List<String> list1 = new ArrayList<>();
+        list1.add("111");
+        System.out.print(list1.size());
 
     }
 }

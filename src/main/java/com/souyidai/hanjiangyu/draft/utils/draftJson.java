@@ -43,9 +43,10 @@ public class draftJson {
         System.out.println(jsonObject.get("final_score"));
 
         //jsonarray要[]，jsonobject要{}
-//        JSONArray jsonArray = JSONArray.parseArray(jsonString);
-//        System.out.println(jsonArray);
-//
+        String strj = "[{\"age\":18,\"name\":\"tom\",\"sex\":\"man\"},{\"age\":18,\"name\":\"tom\",\"sex\":\"man\"}]";
+        JSONArray jsonArray = JSONArray.parseArray(strj);
+        System.out.println(jsonArray);
+
 
     }
 }

@@ -1,0 +1,32 @@
+String类型的indexOf方法：
+返回 String 对象内第一次出现子字符串的字符位置。
+strObj.indexOf(subString[, startIndex])
+参数：subString必选项。要在 String 对象中查找的子字符串。
+starIndex可选项。该整数值指出在 String 对象内开始查找的索引。如果省略，则从字符串的开始处查找。 如果 startindex 是负数，则 startindex 被当作零。
+indexOf 方法返回一个整数值，指出 String 对象内子字符串的开始位置。如果没有找到子字符串，则返回 -1。
+（14）
+
+String类型的Substring方法：
+substring(参数)是java中截取字符串的一个方法。有两种传参方式：
+一种是public String substring(int beginIndex)
+返回一个新的字符串，它是此字符串的一个子字符串。该子字符串从指定索引处的字符开始，直到此字符串末尾。
+另一种是public String substring(int beginIndex, int endIndex)
+返回一个新字符串，它是此字符串的一个子字符串。该子字符串从指定的 beginIndex 处开始，直到索引 endIndex - 1 处的字符。
+因此，该子字符串的长度为 endIndex-beginIndex。
+（14）
+
+String类型的charAt(int index)方法：charAt()方法返回指定索引位置的char值。索引范围为0~length()-1.
+（20）
+
+String类型的toCharArray()方法:将字符串转换为字符数组。
+（6）
+
+String类型的trim()方法:去掉字符序列左边和右边的空格
+（8）
+
+char类型可以直接比较大小，如c >='0'；换而言之，所有基本数据类型都可以直接比较大小。
+（8）
+
+Stack的方法：
+empty()查看是否为空，peek()查看栈顶，pop()出栈，push(E item)压栈，search(Object o)查位置
+（20）

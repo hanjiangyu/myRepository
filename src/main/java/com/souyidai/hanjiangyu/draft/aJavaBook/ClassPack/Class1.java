@@ -1,4 +1,4 @@
-package com.souyidai.hanjiangyu.draft.aJavaBook;
+package com.souyidai.hanjiangyu.draft.aJavaBook.classPack;
 
 import java.util.Date;
 

@@ -1,5 +1,7 @@
 package com.souyidai.hanjiangyu.draft.utils;
 
+import com.souyidai.hanjiangyu.draft.model.Person;
+
 /**
  * Created by SOUYIDAI on 2016/9/14.
  */
@@ -25,12 +27,19 @@ public class riverCrossingProblem {
         if(i1==l1){
             System.out.println("==");
         }
+
+        Person p1 = new Person();
+        p1.setName("a");
+        Person p2 = p1,p3 = p1;
+        p3.setName("b");
+        System.out.println(p1.getName()+"/"+p2.getName()+"/"+p3.getName()+"/");
     }
 
     public static String getStr(){
         String s = "";
         return s;
     }
+
 
 
 

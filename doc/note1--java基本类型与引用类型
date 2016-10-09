@@ -2,9 +2,14 @@
 String类型的问题值得看一万遍，9.23从string中删除"\\"时又犯了错误，ss.replace("\\","")是错的，String sss = ss.replace("\\","")
 才是对的。
 
-String.length() 正确返回字符串长度，无论数字英文还是汉字
+String.length() 返回字符串长度，无论数字英文还是汉字
 
 String类型初始化是双引号“”，char类型初始化是单引号‘’
+
+对于三者使用的总结：
+1.如果要操作少量的数据用 = String
+2.单线程操作字符串缓冲区 下操作大量数据 = StringBuilder
+3.多线程操作字符串缓冲区 下操作大量数据 = StringBuffer
 
 
 

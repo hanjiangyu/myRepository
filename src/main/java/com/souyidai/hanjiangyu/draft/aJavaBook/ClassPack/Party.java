@@ -1,7 +1,6 @@
-package com.souyidai.hanjiangyu.draft.aJavaBook;
+package com.souyidai.hanjiangyu.draft.aJavaBook.classPack;
 
 import com.souyidai.hanjiangyu.draft.model.Person;
-import com.sun.glass.ui.SystemClipboard;
 
 /**
  * Created by hanjiangyu on 2016/9/29.

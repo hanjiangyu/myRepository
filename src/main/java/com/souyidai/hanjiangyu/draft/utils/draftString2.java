@@ -30,7 +30,14 @@ public class draftString2 {
 
         List<String> list1 = new ArrayList<>();
         list1.add("111");
-        System.out.print(list1.size());
+        System.out.println(list1.size());
+
+        String s11 = "abcabc";
+        System.out.println(s11.indexOf("c"));
+        System.out.println(s11.indexOf("c",4));
+        System.out.println(s11.substring(2,4));
+        System.out.println(s11.length());
+
 
     }
 }

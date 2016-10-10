@@ -1,4 +1,4 @@
-package com.souyidai.hanjiangyu.draft.utils;
+package com.souyidai.hanjiangyu.draft.algorithm;
 
 import java.util.List;
 import java.util.Stack;
@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * Created by SOUYIDAI on 2016/9/19.
  */
-public class draftString {
+public class ReverseString {
     public static void main(String[] arg){
         String str = "海贼王";
         System.out.println(str);
@@ -95,7 +95,7 @@ public class draftString {
     //toCharArray()方法转换为数组，利用stack先入后出
     public static String reverse7(String s) {
         char[] str = s.toCharArray();
-        Stack<Character> stack = new Stack<Character>();
+        Stack<Character> stack = new Stack<>();
         for (int i = 0; i < str.length; i++)
             stack.push(str[i]);
 

@@ -4,6 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <artifactId>souyidai-root-pom</artifactId>
+        <groupId>com.souyidai</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath></relativePath>
+    </parent>
+
     <groupId>com.souyidai.hanjiangyu.draft</groupId>
     <artifactId>com-souyidai-hanjiangyu-draft</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -13,11 +20,98 @@
     </properties>
 
     <dependencies>
+        <!-- spring框架下依赖包 -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-mongodb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+        </dependency>
+        <!-- /////spring框架下aop的两个实现包和ioc的一个实现包 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+        </dependency>
+        <!-- 日志依赖包 -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.souyidai.logback</groupId>
+            <artifactId>sms-appender</artifactId>
+        </dependency>
+        <!-- json依赖包 -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.2.8</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency>
+        <!-- servlet依赖包 jstl核心标签库；servlet-api提供HttpServletRequest和HttpServletResponse等对象-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+        </dependency>
+        <!-- rose依赖包 -->
+        <dependency>
+            <groupId>com.souyidai.commons</groupId>
+            <artifactId>base-commons</artifactId>
+            <version>2.0-SNAPSHOT</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>paoding-rose-jade</artifactId>
+                    <groupId>net.paoding</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -73,7 +167,7 @@
                     <stopPort>999</stopPort>
                     <scanIntervalSeconds>100</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>/bigdata</contextPath>
+                        <contextPath>/hanjiangyu/draft</contextPath>
                     </webApp>
                     <httpConnector>
                         <port>8087</port>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+    <display-name>admin_web</display-name>
+
+    <!-- 通过ContextLoaderListener将web容器与spring容器整合,只负责监听web容器启动和关闭的事件-->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- RequestContextListener监听HTTP请求事件，web服务器接收的每一次请求都会通知该监听器。-->
+    <listener>
+        <listener-class>org.springframework.web.context.request.RequestContextListener</listener-class>
+    </listener>
+
+    <!--spring中的字符集过滤器,可以很方便的解决项目中出现的中文乱码问题-->
+    <!--其中encoding用来设置编码格式，forceEncoding用来设置是否理会 request.getCharacterEncoding()方法，设置为true则强制覆盖
+    之前的编码格式。-->
+    <filter>
+        <filter-name>CharacterEncoding</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ignore</param-name>
+            <param-value>false</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>CharacterEncoding</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- DispatcherServlet主要用作职责调度工作，本身主要用于控制流程-->
+    <servlet>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath*:conf/spring-mvc.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>*.jhtml</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>mvc-dispatcher</servlet-name>
+        <url-pattern>*.ajax</url-pattern>
+    </servlet-mapping>
+
+
+    <welcome-file-list>
+        <welcome-file>/home.jhtml</welcome-file>
+    </welcome-file-list>
+
+    <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>
+</web-app>

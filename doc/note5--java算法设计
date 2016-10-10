@@ -19,10 +19,14 @@ String类型的charAt(int index)方法：charAt()方法返回指定索引位置�
 （20）
 
 String类型的toCharArray()方法:将字符串转换为字符数组。
+String与char互相转化的方法：char[] s = str.toCharArray();return new String(s);
 （6）
 
 String类型的trim()方法:去掉字符序列左边和右边的空格
 （8）
+
+String与StringBuffer互相转化的方法：return new StringBuffer(s).reverse().toString();
+(344)
 
 char类型可以直接比较大小，如c >='0'；换而言之，所有基本数据类型都可以直接比较大小。
 （8）

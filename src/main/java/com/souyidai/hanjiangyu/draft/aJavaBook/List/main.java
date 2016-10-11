@@ -16,5 +16,8 @@ public class Main {
         list.orderList();
         System.out.println("after order:");
         list.printList();
+        list.deleteDuplecate();
+        System.out.println("删除重复:");
+        list.printList();
     }
 }

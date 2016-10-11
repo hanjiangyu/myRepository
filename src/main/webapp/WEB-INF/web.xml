@@ -6,6 +6,12 @@
          version="3.0">
     <display-name>admin_web</display-name>
 
+    <!--不可或缺的一句话，否则在默认加载中是找不到applicationContext.xml文件的-->
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value></param-value>
+    </context-param>
+
     <!-- 通过ContextLoaderListener将web容器与spring容器整合,只负责监听web容器启动和关闭的事件-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -35,7 +41,7 @@
         <url-pattern>/*</url-pattern>
     </filter-mapping>
 
-    <!-- DispatcherServlet主要用作职责调度工作，本身主要用于控制流程-->
+    <!-- DispatcherServlet主要用作职责调度工作，本身主要用于控制流程，是springmvc的组成部分-->
     <servlet>
         <servlet-name>mvc-dispatcher</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -56,7 +62,7 @@
 
 
     <welcome-file-list>
-        <welcome-file>/home.jhtml</welcome-file>
+        <welcome-file>/index.jsp</welcome-file>
     </welcome-file-list>
 
     <session-config>

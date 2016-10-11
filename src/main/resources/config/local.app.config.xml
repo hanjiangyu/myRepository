@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appconfig>
+    <bigdata>
+        <mongo>
+            <msg>
+                <host>bigdata_credit</host>
+                <port>27017</port>
+                <username>soeasy</username>
+                <password>soeasy</password>
+                <dbs>
+                    <credit>
+                        soeasy_credit
+                    </credit>
+                </dbs>
+            </msg>
+        </mongo>
+    </bigdata>
+</appconfig>

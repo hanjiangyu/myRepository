@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- Default bean name is 'mongo' -->
+    <!--<mongo:mongo host="${mongo.msg.host}" port="${mongo.msg.port}" />-->
+    <!--<mongo:mongo host="${bdmongo.msg.host}" port="${bdmongo.msg.port}">
+        <mongo:options connections-per-host="8"
+                       threads-allowed-to-block-for-connection-multiplier="4"
+                       connect-timeout="1000"
+                       max-wait-time="1500"
+                       auto-connect-retry="true"
+                       socket-keep-alive="true"
+                       socket-timeout="1500"
+                       slave-ok="true"
+                       write-number="1"
+                       write-timeout="0"
+                       write-fsync="true"/>
+    </mongo:mongo>
+    <mongo:db-factory dbname="soeasy_credit"  username="soeasy" password="soeasy" mongo-ref="mongo" />
+
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+    </bean>
+    -->
+
+    <mongo:mongo host="${bigdata.mongo.msg.host}" port="${bigdata.mongo.msg.port}">
+        <mongo:options connections-per-host="8"
+                       threads-allowed-to-block-for-connection-multiplier="4"
+                       connect-timeout="1000" max-wait-time="1500" auto-connect-retry="true"
+                       socket-keep-alive="true" socket-timeout="1500" slave-ok="true"
+                       write-number="1" write-timeout="0" write-fsync="true" />
+    </mongo:mongo>
+    <mongo:db-factory dbname="${bigdata.mongo.msg.dbs.credit}" username="${bigdata.mongo.msg.username}"
+                      password="${bigdata.mongo.msg.password}" mongo-ref="mongo" />
+
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+    </bean>
+</beans>

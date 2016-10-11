@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--将一些组态设定，移出至.properties文件中，而.properties文件可以作为客户根据需求，自定义一些相关的参数。-->
+    <bean name="PropertyPlaceholderConfigurer"
+          class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="properties" ref="appConfiguration"/>
+    </bean>
+
+    <bean id="appConfiguration" class="com.souyidai.base.commons.configuration.ConfigBean">
+        <property name="appName" value="admin-draft"/>
+        <property name="hostName" value="admin"/>
+        <property name="configurations">
+            <list>
+                <!-- 本地测试配置文件 -->
+                <bean class="com.souyidai.base.commons.configuration.XMLConfiguration">
+                    <constructor-arg index="0" type="java.net.URL"
+                                     value="classpath:config/local.app.config.xml"/>
+                </bean>
+                <!-- 测试环境配置文件 -->
+                <bean class="com.souyidai.base.commons.configuration.XMLConfiguration">
+                    <constructor-arg index="0" type="java.net.URL"
+                                     value="classpath:config/test.app.config.xml"/>
+                </bean>
+                <!-- 生产环境配置文件 -->
+                <bean class="com.souyidai.base.commons.configuration.XMLConfiguration">
+                    <constructor-arg index="0" type="java.net.URL"
+                                     value="classpath:config/product.app.config.xml"/>
+                </bean>
+            </list>
+        </property>
+    </bean>
+</beans>

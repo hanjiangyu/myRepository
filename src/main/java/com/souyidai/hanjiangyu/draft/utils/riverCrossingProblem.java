@@ -2,6 +2,9 @@ package com.souyidai.hanjiangyu.draft.utils;
 
 import com.souyidai.hanjiangyu.draft.model.Person;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by SOUYIDAI on 2016/9/14.
  */
@@ -33,6 +36,11 @@ public class riverCrossingProblem {
         Person p2 = p1,p3 = p1;
         p3.setName("b");
         System.out.println(p1.getName()+"/"+p2.getName()+"/"+p3.getName()+"/");
+
+        char chr1 = 'a';
+        char chr2 = 'a';
+        if(chr1==chr2){System.out.println("==");}
+
     }
 
     public static String getStr(){

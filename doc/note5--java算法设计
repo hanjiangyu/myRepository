@@ -34,3 +34,7 @@ char类型可以直接比较大小，如c >='0'；换而言之，所有基本数
 Stack的方法：
 empty()查看是否为空，peek()查看栈顶，pop()出栈，push(E item)压栈，search(Object o)查位置
 （20）
+
+对Vector、ArrayList在迭代的时候如果同时对其进行修改就会抛出java.util.ConcurrentModificationException异常;这种情况应该考虑使用
+迭代器或者迭代以外的方法。
+(383)

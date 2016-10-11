@@ -52,6 +52,10 @@ public class draftCollection {
         taskList.add("看单例模式");
         taskList.add("看servlet");
         taskList.add("看servlet");
+        taskList.remove("看框架");
+        if(taskList.contains("看servlet")){
+            taskList.remove("看servlet");
+        }
         System.out.println(taskList);
         for(String str : taskList){
             System.out.print(str);

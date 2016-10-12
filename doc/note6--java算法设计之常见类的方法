@@ -1,0 +1,33 @@
+必须记住的常用方法：
+
+String:
+.indexOf(subString[, startIndex]);
+.substring(int beginIndex, int endIndex);
+.charAt(int index);
+.toCharArray();
+.trim();
+.contains(CharSequence s);
+.valueOf(~);
+
+StringBuffer:
+.append(~);
+.delete(int start, int end);
+.deleteCharAt(int index);
+.indexOf(String str);
+.reverse();
+.toString();
+
+HashMap:
+.entrySet();
+
+Stack:
+.empty()查看是否为空;
+.peek()查看栈顶;
+.pop()出栈;
+.push(E item)压栈;
+.search(Object o)查位置;
+
+
+
+
+

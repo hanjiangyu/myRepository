@@ -1,7 +1,5 @@
 package com.souyidai.hanjiangyu.draft.aJavaBook.list;
 
-import javafx.beans.binding.BooleanBinding;
-
 import java.util.Hashtable;
 
 /**
@@ -85,6 +83,7 @@ public class MyLinkedList {
         return head;
     }
 
+    //删除重复节点
     public void deleteDuplecate(){
         Hashtable<Integer,Integer> table = new Hashtable<Integer,Integer>();
         Node tmp = head;

@@ -28,7 +28,8 @@ String类型的trim()方法:去掉字符序列左边和右边的空格
 String与StringBuffer互相转化的方法：return new StringBuffer(s).reverse().toString();
 (344)
 
-char类型可以直接比较大小，如c >='0'；换而言之，所有基本数据类型都可以直接比较大小。
+char类型可以直接比较大小，如c >='0'；换而言之，所有基本数据类型都可以直接比较大小。这是ascii码的比较。
+char类型所涉及到的减法，实际上是ASCII码的的减法。例如：c - '0'，实际上让c转化为了字符串类型，而不是以ascii码去呈现。
 （8）
 
 Stack的方法：
@@ -38,3 +39,4 @@ empty()查看是否为空，peek()查看栈顶，pop()出栈，push(E item)压�
 对Vector、ArrayList在迭代的时候如果同时对其进行修改就会抛出java.util.ConcurrentModificationException异常;这种情况应该考虑使用
 迭代器或者迭代以外的方法。
 (383)
+

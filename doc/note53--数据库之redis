@@ -1,0 +1,14 @@
+/*****************************************redis基础******************************************************************/
+key-value存储：可以通过key快速查询到其value。一般来说，存储不管value的格式，照单全收。（Redis包含了其他功能）
+
+关键概念key
+
+
+/***************************************基本redis命令******************************************************************/
+打开redis服务：redis-server
+连接redis服务：redis-cli -h 127.0.0.1 -p 6379
+
+报错：Creating Server TCP listening socket *:6379: bind: No such file or directory
+临时解决方法：1.redis-cli；2.shutdown；3.exit；4.redis-server
+
+keys * 查询所有的键

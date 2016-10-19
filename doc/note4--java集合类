@@ -1,3 +1,6 @@
 array需要[]，map需要{}
 
 list.remove()要注意IndexOutOfBoundsException
+
+ArrayList是实现了基于动态数组的数据结构
+LinkedList基于链表的数据结构

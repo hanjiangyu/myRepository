@@ -19,7 +19,12 @@ StringBuffer:
 .toString();
 
 HashMap:
+.remove(Object key);
+.put(K key, V value);
 .entrySet();
+.containsKey(Object key);
+.containsValue(Object value);
+
 
 Stack:
 .empty()查看是否为空;

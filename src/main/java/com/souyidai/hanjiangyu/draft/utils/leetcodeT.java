@@ -1,5 +1,7 @@
 package com.souyidai.hanjiangyu.draft.utils;
 
+import com.souyidai.hanjiangyu.draft.model.Person;
+
 import java.util.*;
 
 /**
@@ -8,9 +10,12 @@ import java.util.*;
 public class leetcodeT {
     public static void main(String[] args){
 
-        String s1 = "aaaa";
-        String s2 = "aaaaa";
+        Person a = new Person();
+        Person b = new Person();
 
+        a.setAge(6);
+        b.setAge(a.getAge());
+        System.out.print(b.getAge());
     }
 
 

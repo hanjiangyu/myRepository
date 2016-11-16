@@ -2,6 +2,7 @@
 1.一次完整的http请求过程   from：开发者头条/ http://foofish.net/http-request-process.html
 2.CP/IP、Http、Socket的区别   from：百度经验/ http://jingyan.baidu.com/article/08b6a591e07ecc14a80922f1.html
 3.计算机网络各层协议   from：博客园/ http://www.cnblogs.com/maowang1991/archive/2013/04/16/3024393.html
+4.我也想来谈谈HTTPS   from：开发者头条/ http://insights.thoughtworkers.org/talk-about-https/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io
 
 OSI网络七层分层是一个概念性的参考模型.
 实际上，我们目前使用的是TCP/IP模型。基于TCP/IP的参考模型将协议分成四个层次，它们分别是：

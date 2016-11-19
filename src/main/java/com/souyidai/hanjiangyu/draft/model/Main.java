@@ -1,5 +1,8 @@
 package com.souyidai.hanjiangyu.draft.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by Administrator on 2016/11/19.
  */
@@ -20,9 +23,35 @@ public class Main {
         beef.setUnitPrice(50);
         beef.setPictureUrl("http://xxx.com/N05/M06/b1001.jpg");
 
-        Cart cart1 = new Cart();
-        cart1.addGoods(milk);
-        cart1.showCart();
+        Goods egg = new Goods();
+        egg.setId("e1001");
+        egg.setName("鸡蛋(优质)");
+        egg.setType("食品");
+        egg.setUnitPrice(10);
+        egg.setPictureUrl("http://xxx.com/N05/M06/e1001.jpg");
 
+        Cart cart1 = new Cart();
+
+        cart1.addGoods(milk);
+        cart1.addGoods(beef);
+        cart1.showCart();
+        System.out.println("-------------------------------------------------");
+        cart1.addGoods(milk);
+        cart1.addGoods(beef);
+        cart1.showCart();
+        System.out.println("-------------------------------------------------");
+        cart1.deleteGoods(milk);
+        cart1.deleteGoods(milk);
+        cart1.showCart();
+        System.out.println("-------------------------------------------------");
+        cart1.addGoods(milk);
+        cart1.addGoods(beef);
+        cart1.addGoods(egg);
+        List<Goods> deleteList = new ArrayList<>();
+        deleteList.add(egg);
+        deleteList.add(beef);
+        cart1.deleteManyGoods(deleteList);
+        cart1.showCart();
+        System.out.println("-------------------------------------------------");
     }
 }

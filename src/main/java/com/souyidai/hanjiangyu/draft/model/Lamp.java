@@ -3,7 +3,7 @@ package com.souyidai.hanjiangyu.draft.model;
 /**
  * Created by hanjiangyu on 2016/11/1.
  */
-public class Lamp {
+ public class Lamp {
     //0代表关，1代表开
     private int state=1;
     private int id;

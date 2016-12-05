@@ -1,4 +1,4 @@
-package com.souyidai.hanjiangyu.draft.aJavaBook.list;
+package com.souyidai.hanjiangyu.draft.aJavaBook.List;
 
 /**
  * Created by hanjiangyu on 2016/10/11.

@@ -1,11 +1,11 @@
-package com.souyidai.hanjiangyu.draft.aJavaBook.list;
+package com.souyidai.hanjiangyu.draft.aJavaBook.List;
 
 import java.util.Hashtable;
 
 /**
  * Created by hanjiangyu on 2016/10/11.
  */
-public class MyLinkedList {
+class MyLinkedList {
     Node head = null;
 
     public void addNode(int d){

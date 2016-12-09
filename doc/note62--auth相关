@@ -1,0 +1,2 @@
+本地调试程序，auth出错，肯定是因为host有问题；接外网要注释掉admin.souyidai.com的host；本地则相反，一定要把域名指向.31服务器，只有这样
+才能获取dev上相关的thrift配置。

@@ -18,3 +18,11 @@ Content-Length 很好的解释了下载到本地的方法。
 我觉得非自定义注解的处理可能不在代码中，而在框架里。
 
 不打@Controller标签是不能自动注入的
+
+修改js/css不生效，应该清除缓存
+
+映射的数据没有双引号，fastjson-get取出的数据有双引号
+
+fk.api 找不到接口和类时，请找到root module，clean后install
+
+

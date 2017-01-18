@@ -170,7 +170,7 @@
                         <contextPath>/hanjiangyu/draft</contextPath>
                     </webApp>
                     <httpConnector>
-                        <port>8087</port>
+                        <port>8088</port>
                     </httpConnector>
                 </configuration>
             </plugin>

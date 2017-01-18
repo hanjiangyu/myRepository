@@ -35,7 +35,7 @@
             <th>姓名</th>
         </tr>
         <tr class="normal-tr">
-            <td class="seq">{{i+1}}</td>
+            <td class="seq">{{data.age}}</td>
             <td class="name">{{data.name}}</td>
         </tr>
     </script>

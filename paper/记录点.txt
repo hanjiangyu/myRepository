@@ -6,3 +6,5 @@ resin
 nginx
 
 单个索引->复合索引
+
+oozie

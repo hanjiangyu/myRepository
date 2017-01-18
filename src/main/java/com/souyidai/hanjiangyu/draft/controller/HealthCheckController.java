@@ -18,7 +18,7 @@ import java.util.List;
 @Controller
 @RequestMapping(value="/health")
 public class HealthCheckController {
-    private static final Logger LOG = LoggerFactory.getLogger(HealthCheckController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(HealthCheckController.class);
 
     @RequestMapping(value = "/check.jhtml")
     public String check() {
@@ -30,6 +30,7 @@ public class HealthCheckController {
     public Person data() {
         Person p1 = new Person();
         p1.setName("拉塞尔");
+        p1.setAge(12);
         return p1;
     }
 }
